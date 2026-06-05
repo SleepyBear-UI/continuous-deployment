@@ -1,8 +1,9 @@
 package src.test.java;
 
-import static org.junit.Assert.*;
-import src.main.java.*;
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+
+import src.main.java.Counter;
 
 public class CounterTest {
 
@@ -14,7 +15,8 @@ public class CounterTest {
 			testCounter.increment();
 		}
 		
-		testCounter.reset(); 
+		testCounter.reset();
+		
 		
 		assertEquals(testCounter.getCount(), 0);
 	}
