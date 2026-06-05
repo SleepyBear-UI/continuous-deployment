@@ -27,6 +27,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+        server-id: github
+        settings-path: ${{ github.workspace }}
         cache: maven
     - name: Build, test, and analyze
       env:
